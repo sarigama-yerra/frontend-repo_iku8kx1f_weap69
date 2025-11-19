@@ -5,10 +5,10 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 group">
-          <div className="p-2 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 text-white shadow-lg shadow-orange-500/20">
+          <div className="p-2 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 text-white shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform">
             <Plane className="w-5 h-5" />
           </div>
-          <span className="text-white font-semibold tracking-tight group-hover:text-orange-300 transition-colors">AeroVoyage</span>
+          <span className="font-semibold tracking-tight gradient-text">AeroVoyage</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-slate-200">
           <a href="#destinations" className="hover:text-white/90">Destinations</a>
