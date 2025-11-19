@@ -17,7 +17,8 @@
 /* Motion & visual FX */
 @layer utilities {
   .glass {
-    @apply bg-white/6 backdrop-blur-md border border-white/10;
+    /* Use valid Tailwind opacity step (5 or 10). 6 is not a supported fraction. */
+    @apply bg-white/10 backdrop-blur-md border border-white/10;
   }
   .card {
     @apply rounded-2xl glass shadow-xl shadow-black/20 transition-transform duration-300 will-change-transform;
